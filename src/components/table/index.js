@@ -52,27 +52,27 @@ export default function NitaxTable() {
     { id: "date", label: "Date", align: "left" },
   ];
 
-  const getPlanets = async () => {
-    try {
-      const response = await axios.get(
-        `https://swapi.dev/api/planets/?page=${page + 1}`
-      );
-      if (response.status === 200) {
-        const { results, count } = response.data;
-        setTableData((prev) => [...prev, ...results]);
-        setTotalPage(count);
-      }
-    } catch (error) {
-      notifyErrorHandler({
-        type: "error",
-        title: "Error Fetching Accounts",
-        msg: error,
-        duration: 5000,
-      });
-    } finally {
-    }
-  };
   useEffect(() => {
+    const getPlanets = async () => {
+      try {
+        const response = await axios.get(
+          `https://swapi.dev/api/planets/?page=${page + 1}`
+        );
+        if (response.status === 200) {
+          const { results, count } = response.data;
+          setTableData((prev) => [...prev, ...results]);
+          setTotalPage(count);
+        }
+      } catch (error) {
+        notifyErrorHandler({
+          type: "error",
+          title: "Error Fetching Accounts",
+          msg: error,
+          duration: 5000,
+        });
+      } finally {
+      }
+    };
     getPlanets();
   }, [page]);
 

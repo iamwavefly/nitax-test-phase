@@ -1,5 +1,4 @@
-import PropTypes from "prop-types";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 // @mui
 // components
 import { TableRow, TableCell, Typography } from "@mui/material";
@@ -18,9 +17,6 @@ export default function PlanetTableRow({ row, selected }) {
     terrain,
     created,
   } = row;
-
-  const [openMenu, setOpenMenuActions] = useState(null);
-
   return (
     <TableRow hover className={Styles.tableCell}>
       <TableCell sx={{ display: "flex", alignItems: "center" }}>

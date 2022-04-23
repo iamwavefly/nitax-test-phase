@@ -18,7 +18,7 @@ import {
 } from "@mui/material";
 // components
 import notifyErrorHandler from "../../middlewares/notifyErrorHandler";
-import useTable, { getComparator, emptyRows } from "../../hooks/useTable";
+import useTable from "../../hooks/useTable";
 
 // sections
 import TableHeadCustom from "./TableHeadCustom";
@@ -32,7 +32,6 @@ export default function NitaxTable() {
     dense,
     page,
     order,
-    orderBy,
     rowsPerPage,
     selected,
     onSelectAllRows,

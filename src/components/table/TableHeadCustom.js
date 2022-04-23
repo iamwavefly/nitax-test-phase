@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 // @mui
 import {
   Box,
-  Checkbox,
   TableRow,
   TableCell,
   TableHead,

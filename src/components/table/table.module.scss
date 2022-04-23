@@ -1,0 +1,9 @@
+.tableCellWrapper{
+    max-width: 20rem;
+}
+.tableCell{
+    & > td {
+        color: #555;
+        font-weight: 400;
+    }
+}

@@ -1,13 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 body {
+  width: 100%;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  place-items: center;
+  background: #232526;  
+  background: -webkit-linear-gradient(to right, rgba(65, 67, 69, 0.6), rgba(35, 37, 38)), url("https://i2.wp.com/4.bp.blogspot.com/-htgdz_hTKRI/XUuq3JIyMII/AAAAAAAAKiA/qJabYF460sMshzeK1onJKvkNnT9kXjOIgCLcBGAs/w914-h514-p-k-no-nu/astronaut-outer-space-stars-planet-uhdpaper.com-4K-4.26-wp.thumbnail.jpg") no-repeat;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(65, 67, 69, 0.6), rgba(35, 37, 38)), url("https://i2.wp.com/4.bp.blogspot.com/-htgdz_hTKRI/XUuq3JIyMII/AAAAAAAAKiA/qJabYF460sMshzeK1onJKvkNnT9kXjOIgCLcBGAs/w914-h514-p-k-no-nu/astronaut-outer-space-stars-planet-uhdpaper.com-4K-4.26-wp.thumbnail.jpg") no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background-size: cover;
 }
+.label{
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.success{
+  background-color: #2B353F;
+  color: #fff;
+  box-shadow: 0 5px 01px rgba(200, 250, 205, 0.1);
+}
+.dense{
+  background-color: rgba(65, 67, 69, 0.6);
+  color: #fff;
+  font-weight: 400;
+  box-shadow: 0 5px 01px rgba(200, 250, 205, 0.1);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
